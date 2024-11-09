@@ -1,0 +1,198 @@
+/* Formato para el blog index */
+body {
+    background-color: #151414; /* Color de respaldo */
+    background-image: url('img/background.jpg');
+    background-size: cover; /* Hace que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    margin: 0; /* Elimina márgenes para que el fondo cubra toda la página */
+    padding: 0%; /* Agrega espacio alrededor del contenido */
+    height: 100vh; /* Asegura que el fondo cubra el 100% de la altura de la pantalla */
+    display: flex; /* Usa Flexbox para centrar el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    font-family: Arial, sans-serif; /* Opcional, para cambiar la fuente */
+    padding-top: 120px; /* Ajusta este valor según el alto de la barra de navegación */
+    
+}
+
+/* Formato para la navegación */
+header {
+    background-color: rgba(44, 62, 80, 0.8); /* Color de fondo semitransparente */
+    color: white;
+    padding: 15px 0; /* Padding para un buen espacio arriba y abajo */
+    text-align: center; /* Centra la barra de navegación */
+    border-radius: 8px;
+    position: fixed; /* Fija la barra en la parte superior */
+    top: 0; /* Posiciona la barra en la parte superior */
+    left: 0; /* Alinea a la izquierda */
+    width: 100%; /* Asegura que la barra ocupe todo el ancho de la página */
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+}
+
+/* Formato para la navegación principal */
+.categorias {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0;
+}
+
+.categorias li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.categorias a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: #ecf0f1;
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    transition: background-color 0.3s, border 0.3s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.categorias a:hover {
+    background-color: #3498db;
+    border: 2px solid #2980b9;
+}
+
+/* Formato para la navegación Profesor X */
+.categoria-x {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Usa flexbox para alinearlos horizontalmente */
+    justify-content: center; /* Centra los elementos en el contenedor */
+}
+
+/* Estilo para cada enlace de la barra de navegación */
+.categoria-x li {
+    margin: 0 20px; /* Espacio entre los elementos de la lista */
+}
+
+.categoria-x a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: #aea528; /* Color para el texto */
+    font-size: 18px; /* Tamaño de fuente */
+    padding: 10px 20px; /* Padding alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    display: inline-block; /* Asegura que los enlaces sean bloques en línea */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave en hover */
+    cursor: pointer;
+}
+
+/* Formato para la navegación de Chupete Suazo*/
+
+.categoria-suazo {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Usa flexbox para alinearlos horizontalmente */
+    justify-content: center; /* Centra los elementos en el contenedor */
+}
+
+/* Estilo para cada enlace de la barra de navegación */
+.categoria-suazo li {
+    margin: 0 20px; /* Espacio entre los elementos de la lista */
+}
+
+.categoria-suazo a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: #941616; /* Color para el texto */
+    font-size: 18px; /* Tamaño de fuente */
+    padding: 10px 20px; /* Padding alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    display: inline-block; /* Asegura que los enlaces sean bloques en línea */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave en hover */
+    cursor: pointer;
+}
+
+
+/* Efecto de hover sobre los enlaces */
+.categoria-x a:hover {
+    background-color: #3498db; /* Fondo azul cuando el usuario pasa el ratón */
+    color: white; /* Cambia el color del texto */
+}
+
+/* Formato para la bienvenida */
+.formato {
+    max-width: 800px; /* Limita el ancho máximo del contenido */
+    padding: 20px; /* Espacio interno alrededor del contenido */
+    background-color: #6c6f97; /* Color de fondo del artículo */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil alrededor */
+    text-align: center; /* Centra el texto dentro del artículo */
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #46e7e4;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #46e7e4;
+}
+
+p {
+    font-size: 20px;
+    padding-top: 20px;
+    color: #46e7e4;
+}
+
+/* Estilo para el footer */
+footer {
+    position: absolute; /* Lo posiciona en relación con el body */
+    top: 30px; /* Lo coloca en la parte superior */
+    left: 10px; /* Lo coloca en la parte izquierda */
+    padding: 10px; /* Agrega algo de espacio alrededor */
+    font-size: 14px; /* Tamaño de la fuente */
+    background-color: rgba(0, 0, 0, 0.1); /* Fondo semi-transparente */
+    width: auto; /* El ancho se ajusta al contenido */
+    text-align: left; /* Alinea el texto a la izquierda */
+    color: #1f4258;
+}
+
+/* Formato para las imágenes */
+img {
+    width: 500px; /* Ancho específico */
+    height: auto; /* Mantener la proporción */
+}
+
+/* Imagen al lado del texto */
+.imagen-flotante {
+    float: left; /* Hace que la imagen flote a la izquierda */
+    width: 500px; 
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}  
+
+/* Salto de página */
+.salto {
+    height: 115px; 
+}
+
+/* Formato para el apartado del video */
+.enlace {
+    text-align: center; /* Centra el contenido dentro del artículo */
+    margin-bottom: 20px; /* Añade espacio debajo del artículo */
+}
+
+.enlace video {
+    display: block; /* Hace que el video sea un bloque (por defecto es inline) */
+    margin: 0 auto; /* Centra el video */
+}
+
+.enlace a {
+    display: block; /* Hace que el enlace sea un bloque y ocupe toda la línea */
+    margin-top: 10px; /* Espacio entre el video y el enlace */
+    color: #007BFF; /* Color del enlace */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 16px; /* Tamaño de la fuente */
+}
+
+.enlace a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el mouse */
+}
